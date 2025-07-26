@@ -95,9 +95,3 @@ body {
     padding: 0 15px;
     /* Espaciado lateral opcional */
 }
-
-@media screen and (max-width: 768px) {
-  #contacto {
-    margin-top: -100px; /* Puedes ajustar este valor */
-  }
-}
