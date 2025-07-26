@@ -10,6 +10,15 @@ body {
     flex-shrink: 0;
 }
 
+#header {
+  position: sticky;
+  top: 0;
+  z-index: 1000; /* Asegura que esté encima del contenido */
+  background-color: white; /* Para que no se vea transparente */
+}
+
+
+
 #main-container {
     flex-grow: 1;
     overflow-y: auto;
