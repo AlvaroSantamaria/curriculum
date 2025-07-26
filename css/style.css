@@ -98,7 +98,6 @@ body {
 
 @media screen and (max-width: 768px) {
   #contacto {
-    margin-top: 100px; /* Puedes ajustar este valor */
+    margin-top: -100px; /* Puedes ajustar este valor */
   }
 }
-
