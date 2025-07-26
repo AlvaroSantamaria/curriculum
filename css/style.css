@@ -93,3 +93,29 @@ body {
     padding: 0 15px;
     /* Espaciado lateral opcional */
 }
+
+/* Estilo general para footer compacto */
+footer {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  font-size: 0.85rem;
+}
+
+footer p,
+footer h5 {
+  margin-bottom: 0.3rem;
+}
+
+/* 📱 Para pantallas pequeñas (móviles) */
+@media (max-width: 576px) {
+  footer {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-size: 1rem;
+  }
+
+  footer p,
+  footer h5 {
+    margin-bottom: 0.6rem;
+  }
+}
