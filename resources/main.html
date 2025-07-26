@@ -1,0 +1,353 @@
+<style>
+  .bg-orange-subtle {
+    background-color: #ffe5b4;
+  }
+
+  .text-orange-emphasis {
+    color: #ff7a00;
+  }
+
+  .bg-purple-subtle {
+    background-color: #f3e8ff;
+  }
+
+  .text-purple-emphasis {
+    color: #6f42c1;
+  }
+
+  /* Colores personalizados morado */
+  .bg-purple-subtle {
+    background-color: #f3e8ff;
+  }
+
+  /* Asegurar altura uniforme */
+  .card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card-body,
+  .card-header,
+  .list-group-item {
+    flex-grow: 1;
+  }
+
+  /* Ajuste de progreso morado */
+  .progress-bar {
+    background-color: #6f42c1 !important;
+  }
+
+  /* Espaciado entre columnas */
+  .row>div {
+    margin-bottom: 1rem;
+    display: flex;
+  }
+
+  /* Alinear contenido dentro de cada card */
+  .card {
+    flex: 1;
+  }
+
+  /* Ajuste individual para las secciones internas de cada card */
+  .card-header,
+  .card-body,
+  .card-footer {
+    /* Tamaño uniforme: ajusta si necesitas más espacio */
+    display: flex;
+    align-items: center;
+    /* Centrado vertical */
+    justify-content: center;
+    /* Centrado horizontal opcional */
+    text-align: center;
+    /* Alinea el texto en el centro */
+    flex-direction: column;
+    /* Permite que elementos como <h5> y <p> se apilen */
+  }
+
+  /* Extra para asegurar margen en textos */
+  .card-title,
+  .card-body p,
+  .card-footer p {
+    margin-bottom: 0;
+  }
+
+  .container-custom {
+    max-width: 1100px;
+    /* Ajusta el valor según lo compacto que lo quieras */
+    padding: 0 15px;
+    /* Espaciado lateral opcional */
+  }
+</style>
+
+
+<main class="container py-5">
+  <div class="col-md-8 mx-auto text-center">
+
+    <section id="perfil">
+      <img src="../img/001.jpg" alt="Foto de perfil" class="rounded-circle border border-dark"
+        style="width: 350px; height: 350px; border-width: 4px; object-fit: cover;">
+      <h2 class="my-3">Perfil</h2>
+      <p>
+        Hola, soy Álvaro Santamaría, técnico en desarrollo de software del SENA
+        con experiencia en liderazgo de proyectos y trabajo en equipo.
+        Actualmente profundizo en tecnologías como Java (JDBC, JPA, Spring Boot, etc.),
+        desarrollo web con React, Angular y Bootstrap, desarrollo de interfaces gráficas
+        con JavaFx y Swing y manejo de BD con Workbench y MySql.
+        Mi objetivo es convertirme en ingeniero de sistemas especializado en programación,
+        aportando soluciones eficientes y creativas.
+      </p>
+    </section>
+
+    <hr class="my-3">
+
+    <section id="estudios" class="mt-5">
+
+      <h2>Estudios</h2>
+
+      <div class="row">
+        <!-- Card 1 -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card">
+            <div class="card-header px-4 pt-4 bg-primary-subtle text-primary-emphasis">
+              <h5 class="card-title mb-0">Institución Educativa Luis Carlos Galán Sarmiento</h5>
+            </div>
+            <div class="card-body px-4 pt-2 fw-bold">
+              <p>Bachiller Técnico Comercial - Especialidad en procesador de datos contables</p>
+            </div>
+            <div class="card-footer px-4 pt-4 bg-secondary-subtle">
+              <p class="mb-2 fw-bold">Cúcuta, Norte de Santander 2006.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card">
+            <div class="card-header px-4 pt-4 bg-success-subtle text-success-emphasis">
+              <h5 class="card-title mb-0">SENA: Servicio Nacional de Aprendizaje</h5>
+            </div>
+            <div class="card-body px-4 pt-2 fw-bold">
+              <p>Curso en Paquetes Contables</p>
+            </div>
+            <div class="card-footer px-4 pt-4 bg-secondary-subtle">
+              <p class="mb-2 fw-bold">Cúcuta, Norte de Santander 2006.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card">
+            <div class="card-header px-4 pt-4 bg-success-subtle text-success-emphasis">
+              <h5 class="card-title mb-0">SENA: Servicio Nacional de Aprendizaje</h5>
+            </div>
+            <div class="card-body px-4 pt-2 fw-bold">
+              <p>Curso en Facilitar el servicio a clientes con las políticas de la organización</p>
+            </div>
+            <div class="card-footer px-4 pt-4 bg-secondary-subtle">
+              <p class="mb-2 fw-bold">Pamplona, Norte de Santander 2011.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card">
+            <div class="card-header px-4 pt-4 bg-orange-subtle text-orange-emphasis">
+              <h5 class="card-title mb-0">Universidad de Pamplona</h5>
+            </div>
+            <div class="card-body px-4 pt-2 fw-bold">
+              <p>Maestro en Música</p>
+            </div>
+            <div class="card-footer px-4 pt-4 bg-secondary-subtle">
+              <p class="mb-2 fw-bold">Pamplona, Norte de Santander 2017.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card">
+            <div class="card-header px-4 pt-4 bg-success-subtle text-success-emphasis">
+              <h5 class="card-title mb-0">SENA: Servicio Nacional de Aprendizaje</h5>
+            </div>
+            <div class="card-body px-4 pt-2 fw-bold">
+              <p>Técnico en Desarrollo de Software</p>
+            </div>
+            <div class="card-footer px-4 pt-4 bg-secondary-subtle">
+              <p class="mb-2 fw-bold">Bogotá, Cundinamarca 2022.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card">
+            <div class="card-header px-4 pt-4 bg-success-subtle text-success-emphasis">
+              <h5 class="card-title mb-0">SENA: Servicio Nacional de Aprendizaje</h5>
+            </div>
+            <div class="card-body px-4 pt-2 fw-bold">
+              <p>Curso en Procesos de soporte técnico para el mantenimiento de equipos de cómputo</p>
+            </div>
+            <div class="card-footer px-4 pt-4 bg-secondary-subtle">
+              <p class="mb-2 fw-bold">Bogotá, Cundinamarca 2024.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 7 -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card">
+            <div class="card-header px-4 pt-4 bg-success-subtle text-success-emphasis">
+              <h5 class="card-title mb-0">SENA: Servicio Nacional de Aprendizaje</h5>
+            </div>
+            <div class="card-body px-4 pt-2 fw-bold">
+              <p>Curso en Manejo de herramientas Microsoft Office 2016</p>
+            </div>
+            <div class="card-footer px-4 pt-4 bg-secondary-subtle">
+              <p class="mb-2 fw-bold">Bogotá, Cundinamarca 2024.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 8 -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card">
+            <div class="card-header px-4 pt-4 bg-success-subtle text-success-emphasis">
+              <h5 class="card-title mb-0">SENA: Servicio Nacional de Aprendizaje</h5>
+            </div>
+            <div class="card-body px-4 pt-2 fw-bold">
+              <p>Curso en Bases de datos: generalidades y sistemas de gestión</p>
+            </div>
+            <div class="card-footer px-4 pt-4 bg-secondary-subtle">
+              <p class="mb-2 fw-bold">Bogotá, Cundinamarca 2024.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 9 -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card">
+            <div class="card-header px-4 pt-4 bg-purple-subtle text-purple-emphasis">
+              <h5 class="card-title mb-0">Udemy Inc</h5>
+            </div>
+            <div class="card-body px-4 pt-2 fw-bold">
+              <p>Ultimate Git - Sistema de Control de Versiones</p>
+            </div>
+            <div class="card-footer px-4 pt-4 bg-secondary-subtle">
+              <p class="mb-2 fw-bold">Virtual, 2025.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 10 -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card">
+            <div class="card-header px-4 pt-4 bg-purple-subtle text-purple-emphasis">
+              <h5 class="card-title mb-0">Udemy Inc</h5>
+            </div>
+            <div class="card-body px-4 pt-2 fw-bold">
+              <p>Universidad de Java</p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item px-4 pb-4">
+                <p class="mb-2 fw-bold">Actualmente en formación<span class="float-end">50%</span></p>
+                <div class="progress progress-sm">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"
+                    style="width: 50%;">
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="my-3">
+
+    <section id="experiencia" class="mt-5">
+      <h2>Experiencia</h2>
+      <div class="experiencia-box">
+        <div class="container-fluid py-3">
+          <h1>Teleperformance S.A.S</h1>
+          <p style="white-space: pre-line; font-size: 0.875rem;">
+            19 de abril / 18 de octubre 2022
+            Jefe Inmediato: Gerente Senior de Recursos Humanos
+            Martha Cecilia Tovar
+            Contacto: +57 321 4466051
+            Cargo: Practicante SENA – Desarrollador de Software (FrontEnd).
+            • Maquetador web. HTML y CSS.
+            • Crear Entornos pedagógicos, Registros y consultas.
+            • Recrear Entornos web dados por los Diseñadores gráficos.
+            • Desarrollo de Animaciones mediante JavaScript y JQuery.
+            • Desarrollo de Pagina web con Bootstrap.
+            • Implementación de Biblioteca Jspdf.
+            • Beta Tester de entornos web y Unity.
+            • Depurar y reutilizar código ya planteados.
+            • Crear y modificar funciones y variables de JavaScript y JQuery.
+            • Apoyar a las áreas de diseño gráfico y administrativos con fusiones varias.
+            Consultar, desarrollar y proponer nuevos entornos pedagógicos para
+            los procesos de formación desde el área de desarrollo minimizado al
+            máximo costos.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <hr class="my-3">
+
+    <section id="proyectos" class="mt-5">
+      <h2>Proyectos - Prototipos</h2>
+
+  
+
+      <div class="container">
+        <div class="row justify-content-center align-items-md-stretch">
+          <!-- Card Angular -->
+          <div class="col-md-6 col-lg-5">
+            <div class="h-100 p-4 text-bg-dark border rounded-3 text-center">
+              <h2>Angular</h2>
+              <p>Sistema de Inventario.</p>
+              <hr class="my-3">
+              <small class="lead mb-2" style="white-space: pre-line;">Requisitos:
+                • IntelliJ • Angular
+                • Spring Boot
+                • Spring web • Spring JPA
+                • MySql • MySql Driver
+                • Workbench • Lombok
+                • Postman (opcional).
+              </small>
+              <hr class="my-3">
+              <button class="btn btn-outline-light" type="button">Consultar</button>
+            </div>
+          </div>
+
+          <!-- Card React -->
+          <div class="col-md-6 col-lg-5">
+            <div class="h-100 p-4 bg-body-tertiary border rounded-3 text-center">
+              <h2>React</h2>
+              <p>Sistema de Recursos Humanos.</p>
+              <hr class="my-3">
+              <small class="lead mb-2" style="white-space: pre-line;">Requisitos:
+                • IntelliJ • Angular
+                • Spring Boot
+                • Spring web • Spring JPA
+                • MySql • MySql Driver
+                • Workbench • Lombok
+                • Postman (opcional).
+              </small>
+              <hr class="my-3">
+              <button class="btn btn-outline-secondary" type="button">Consultar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+
+</main>
