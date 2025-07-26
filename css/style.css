@@ -3,15 +3,11 @@ body {
     display: flex;
     flex-direction: column;
     height: 100vh;
-    overflow: hidden;
+    overflow: auto;
 }
 
 #header {
     flex-shrink: 0;
-}
-
-#footer {
-    flex-shrink: 1;
 }
 
 #main-container {
@@ -66,8 +62,7 @@ body {
 
 /* Ajuste individual para las secciones internas de cada card */
 .card-header,
-.card-body,
-.card-footer {
+.card-body {
     /* Tamaño uniforme: ajusta si necesitas más espacio */
     display: flex;
     align-items: center;
@@ -82,8 +77,7 @@ body {
 
 /* Extra para asegurar margen en textos */
 .card-title,
-.card-body p,
-.card-footer p {
+.card-body p {
     margin-bottom: 0;
 }
 
